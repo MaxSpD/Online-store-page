@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Заказ вызова</title>
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="main-container__this-product this-product">
+                <div class="this-product__representation representation">
+                    <ul class="representation__img-menu img-menu">
+                        <li class="img-menu__element img-menu__arrow-up-wrapper"  onclick="slideImage(event)">
+                            <div class="img-menu__arrow-up"></div>
+                        </li>
+                        <li class="img-menu__element img-menu__img-wrapper" onclick="changeImage(event)">
+                            <img class="img-menu__img" src="images/photos/img-menu1.png" alt="img-1">
+                        </li>
+                        <li class="img-menu__element img-menu__img-wrapper" onclick="changeImage(event)">
+                            <img class="img-menu__img" src="images/photos/img-menu2.png" alt="img-2">
+                        </li>
+                        <li class="img-menu__element img-menu__img-wrapper" onclick="changeImage(event)">
+                            <img class="img-menu__img" src="images/photos/img-menu3.png" alt="img-3">
+                        </li>
+                        <li class="img-menu__element img-menu__img-wrapper" onclick="changeImage(event)">
+                            <img class="img-menu__img" src="images/photos/img-menu4.png" alt="img-4">
+                        </li>
+                        <li class="img-menu__element img-menu__img-wrapper" onclick="changeImage(event)">
+                            <img class="img-menu__img" src="images/photos/img-menu5.png" alt="img-5">
+                        </li>
+                        <li class="img-menu__element img-menu__arrow-down-wrapper" onclick="slideImage(event)">
+                            <div class="img-menu__arrow-down"></div>
+                        </li>
+                    </ul>
+                    <img class="this-product__image" src="images/photos/img-menu1.png" alt="Изображение продукта">
+                    <div class="representation__img-menu_mini img-menu_mini">
+                        <input class="img-menu_mini__element img-menu_mini__first-img" type="radio" name="image" checked title="Первая" onclick="pickImage(event)">
+                        <input class="img-menu_mini__element img-menu_mini__second-img" type="radio" name="image" title="Вторая" onclick="pickImage(event)">
+                        <input class="img-menu_mini__element img-menu_mini__third-img" type="radio" name="image" title="Третья" onclick="pickImage(event)">
+                        <input class="img-menu_mini__element img-menu_mini__fourth-img" type="radio" name="image" title="Четвертая" onclick="pickImage(event)">
+                    </div>
+                </div>
+                <section class="this-product__info info">
+                    <h1 class="info__name">
+                        Турник + Брусья + Пресс 3В1 Настенный разборный Модерн черный
+                    </h1>
+                    <div class="info__price-container price-container">
+                        <div class="price-container__price price">
+                            <p class="price__current-price">2 550 ₽</p>
+                            <p class="price__discount-price">3 640 </p>
+                            <span>₽</span>
+                        </div>
+                        <div class="price-container__discount">
+                            -30%
+                        </div>
+                        <div class="price-container__presence presence">
+                            <span class="presence__status">В наличии</span>
+                            <div class="presence__img"></div>
+                        </div>
+                    </div>
+                    <form class="info__buy-form by-form">
+                        <div class="by-form__color-panel color-panel">
+                            <span class="color-panel__text">Цвет:</span>
+                            <div class="color-panel__colors-container">
+                                <input class="color-panel__color color-panel__color_black" type="radio" name="color" checked title="Черный">
+                                <input class="color-panel__color color-panel__color_blue" type="radio" name="color" title="Синий">
+                                <input class="color-panel__color color-panel__color_yellow" type="radio" name="color" title="Жёлтый">
+                                <input class="color-panel__color color-panel__color_red" type="radio" name="color" title="Красный">
+                            </div>
+                        </div>
+                        <div class="by-form__submit submit">
+                            <input class="submit__button" type="submit" value="Добавить в корзину">
+                            <input class="submit__amount" type="number" min="1" value="1" title="Количество товара">
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <div class="main-container__features features">
+                <div class="features__element features__element_first">
+                    <div class="features__img_first"></div>
+                    <p class="features__text">Гарантия: 2 года</p>
+                </div>
+                <div class="features__element vertical-line"></div>
+                <div class="features__element features__element_second">
+                    <div class="features__img_second"></div>
+                    <p class="features__text">Бесплатная доставка от 10 000₽</p>
+                </div>
+                <div class="features__element vertical-line"></div>
+                <div class="features__element features__element_third">
+                    <div class="features__img_third"></div>
+                    <p class="features__text">Доставим куда угодно в России</p>
+                </div>
+                <div class="features__element vertical-line"></div>
+                <div class="features__element features__element_fourth">
+                    <div class="features__img_fourth"></div>
+                    <p class="features__text">Бонусные рубли</p>
+                </div>
+            </div>
+            <div class="main-container__recommendation-panel recommendation-panel recommendation-panel_first">
+                <h2 class="recommendation-panel__title recommendation-panel__title_first">
+                    С этим товаром покупают:
+                </h2>
+                <div class="content-box-wrapper">
+                    <div class="recommendation-panel_first__slider content-box-wrapper__slider content-box-wrapper__slider_left"
+                         onclick="slideLeft(event)"></div>
+                    <div class="content-box recommendation-panel_first__content-box" onmousedown="slide(event)" ontouchstart="slide(event)">
+                        <div class="content-box__unit recommendation-panel_first__unit">
+                            <img class="content-box__img" src="images/photos/first-reco-first.png" alt="Custom image">
+                            <div class="content-box__info-container recommendation-panel_first__info-container">
+                                <h3 class="content-box__title recommendation-panel_first__product-title">
+                                    Комплект ручек 5шт.
+                                </h3>
+                                <div class="content-box__price-and-button">
+                                    <span class="content-box__price">
+                                        800₽
+                                    </span>
+                                    <button class="content-box__to-basket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box__unit recommendation-panel_first__unit">
+                            <img class="recommendation-panel__img" src="images/photos/first-reco-second.png" alt="Custom image">
+                            <div class="content-box__info-container recommendation-panel_first__info-container">
+                                <h3 class="content-box__title recommendation-panel_first__product-title">
+                                    Эспандер кистевой с ручками
+                                </h3>
+                                <div class="content-box__price-and-button">
+                                    <span class="content-box__price">
+                                        1 000₽
+                                    </span>
+                                    <button class="content-box__to-basket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box__unit recommendation-panel_first__unit">
+                            <img class="recommendation-panel__img" src="images/photos/first-reco-third.png" alt="Custom image">
+                            <div class="content-box__info-container recommendation-panel_first__info-container">
+                                <h3 class="content-box__title recommendation-panel_first__product-title">
+                                    Перчатки для фитнеса (неопрен…
+                                </h3>
+                                <div class="content-box__price-and-button">
+                                    <span class="content-box__price">
+                                        1 500₽
+                                    </span>
+                                    <button class="content-box__to-basket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box__unit recommendation-panel_first__unit">
+                            <img class="recommendation-panel__img" src="images/photos/first-reco-fourth.png" alt="Custom image">
+                            <div class="content-box__info-container recommendation-panel_first__info-container">
+                                <h3 class="content-box__title recommendation-panel_first__product-title">
+                                    Комплект ручек 5шт.
+                                </h3>
+                                <div class="content-box__price-and-button">
+                                    <span class="content-box__price">
+                                        800₽
+                                    </span>
+                                    <button class="content-box__to-basket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box__unit recommendation-panel_first__unit">
+                            <img class="recommendation-panel__img" src="images/photos/first-reco-fifth.png" alt="Custom image">
+                            <div class="content-box__info-container recommendation-panel_first__info-container">
+                                <h3 class="content-box__title recommendation-panel_first__product-title">
+                                    Эспандер кистевой с ручками
+                                </h3>
+                                <div class="content-box__price-and-button">
+                                    <span class="content-box__price">
+                                        1 000₽
+                                    </span>
+                                    <button class="content-box__to-basket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box__unit recommendation-panel_first__unit">
+                            <img class="recommendation-panel__img" src="images/photos/first-reco-sixth.png" alt="Custom image">
+                            <div class="content-box__info-container recommendation-panel_first__info-container">
+                                <h3 class="content-box__title recommendation-panel_first__product-title">
+                                    Перчатки для фитнеса (неопрен…
+                                </h3>
+                                <div class="content-box__price-and-button">
+                                    <span class="content-box__price">
+                                        1 500₽
+                                    </span>
+                                    <button class="content-box__to-basket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommendation-panel_first__slider content-box-wrapper__slider content-box-wrapper__slider_right"
+                         onclick="slideRight(event)"></div>
+                </div>
+            </div>
+            <div class="main-container__recommendation-panel recommendation-panel recommendation-panel_second">
+                <h2 class="recommendation-panel__title recommendation-panel__title_second">
+                    Похожие товары:
+                </h2>
+                <div class="content-box-wrapper">
+                    <div class="recommendation-panel_second__slider content-box-wrapper__slider content-box-wrapper__slider_left"
+                         onclick="slideLeft(event)"></div>
+                    <div class="content-box recommendation-panel_second__content-box" onmousedown="slide(event)" ontouchstart="slide(event)">
+                        <div class="content-box__unit recommendation-panel_second__unit">
+                            <img class="content-box__img" src="images/photos/second-reco-first.png" alt="Custom image">
+                            <div class="content-box__info-container recommendation-panel_second__info-container">
+                                <h3 class="content-box__title recommendation-panel_second__product-title">
+                                    Турник+ брусья + пресс 3в1 настенный разворный модерн
+                                </h3>
+                                <div class="content-box__price-and-button">
+                                    <span class="content-box__price">
+                                        1 000₽
+                                    </span>
+                                    <button class="content-box__to-basket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box__unit recommendation-panel_second__unit">
+                            <img class="recommendation-panel__img" src="images/photos/second-reco-second.png" alt="Custom image">
+                            <div class="content-box__info-container recommendation-panel_second__info-container">
+                                <h3 class="content-box__title recommendation-panel_second__product-title">
+                                    Турник+ брусья + пресс 3в1 настенный разворный модерн
+                                </h3>
+                                <div class="content-box__price-and-button">
+                                    <span class="content-box__price">
+                                        3 467₽
+                                    </span>
+                                    <button class="content-box__to-basket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box__unit recommendation-panel_second__unit">
+                            <img class="recommendation-panel__img" src="images/photos/second-reco-third.png" alt="Custom image">
+                            <div class="content-box__info-container recommendation-panel_second__info-container">
+                                <h3 class="content-box__title recommendation-panel_second__product-title">
+                                    Турник+ брусья + пресс 3в1 настенный разворный модерн
+                                </h3>
+                                <div class="content-box__price-and-button">
+                                    <span class="content-box__price">
+                                        3 467₽
+                                    </span>
+                                    <button class="content-box__to-basket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box__unit recommendation-panel_second__unit">
+                            <img class="recommendation-panel__img" src="images/photos/second-reco-fourth.png" alt="Custom image">
+                            <div class="content-box__info-container recommendation-panel_second__info-container">
+                                <h3 class="content-box__title recommendation-panel_second__product-title">
+                                    Турник+ брусья + пресс 3в1 настенный разворный модерн
+                                </h3>
+                                <div class="content-box__price-and-button">
+                                    <span class="content-box__price">
+                                        1 000₽
+                                    </span>
+                                    <button class="content-box__to-basket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box__unit recommendation-panel_second__unit">
+                            <img class="recommendation-panel__img" src="images/photos/second-reco-fifth.png" alt="Custom image">
+                            <div class="content-box__info-container recommendation-panel_second__info-container">
+                                <h3 class="content-box__title recommendation-panel_second__product-title">
+                                    Турник+ брусья + пресс 3в1 настенный разворный модерн
+                                </h3>
+                                <div class="content-box__price-and-button">
+                                    <span class="content-box__price">
+                                        3 467₽
+                                    </span>
+                                    <button class="content-box__to-basket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box__unit recommendation-panel_second__unit">
+                            <img class="recommendation-panel__img" src="images/photos/second-reco-sixth.png" alt="Custom image">
+                            <div class="content-box__info-container recommendation-panel_second__info-container">
+                                <h3 class="content-box__title recommendation-panel_second__product-title">
+                                    Турник+ брусья + пресс 3в1 настенный разворный модерн
+                                </h3>
+                                <div class="content-box__price-and-button">
+                                    <span class="content-box__price">
+                                        3 467₽
+                                    </span>
+                                    <button class="content-box__to-basket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommendation-panel_second__slider content-box-wrapper__slider content-box-wrapper__slider_right"
+                         onclick="slideRight(event)"></div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

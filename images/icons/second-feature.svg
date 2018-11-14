@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="28" height="14" viewBox="0 0 28 14">
+    <defs>
+        <path id="k0s5a" d="M0 0a2 2 0 0 1 2-2h24a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-24a2 2 0 0 1-2-2z"/>
+        <clipPath id="k0s5b">
+            <use fill="#fff" xlink:href="#k0s5a"/>
+        </clipPath>
+    </defs>
+    <g transform="translate(0 2)">
+        <use fill="#fff" fill-opacity="0" stroke="#333" stroke-width="2"
+             clip-path="url(&quot;#k0s5b&quot;)" xlink:href="#k0s5a"/>
+    </g>
+    <g transform="translate(2 11)" fill="#333" font-family="PT Sans, sans-serif" font-size="11" style="line-height:22px">
+        <text>
+            <tspan>
+                F
+            </tspan>
+        </text>
+        <text transform="translate(6 0)">
+            <tspan>
+                ree
+            </tspan>
+        </text>
+    </g>
+</svg>

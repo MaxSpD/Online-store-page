@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="30" height="25" viewBox="0 0 30 25">
+    <defs>
+        <path id="jk3xa" d="M1198.892 867l-1.892-1.867 6.216-6.133-6.216-6.133 1.892-1.867 8.108 8z"/>
+        <path id="jk3xb" d="M1185 859c0-7.18 5.82-13 13-13h17v26h-17c-7.18 0-13-5.82-13-13z"/>
+        <mask id="jk3xd" width="2" height="2" x="-1" y="-1">
+            <path fill="#fff" d="M1197 851h10v16h-10z"/>
+            <use xlink:href="#jk3xa"/>
+        </mask>
+        <filter id="jk3xc" width="68" height="81" x="1168" y="815" filterUnits="userSpaceOnUse">
+            <feOffset dy="-7" in="SourceGraphic" result="FeOffset1106Out"/>
+            <feGaussianBlur in="FeOffset1106Out" result="FeGaussianBlur1107Out" stdDeviation="7.6 7.6"/>
+        </filter>
+    </defs>
+    <g>
+        <g opacity=".6" transform="translate(-1185 -846)">
+            <g opacity=".3">
+                <use xlink:href="#jk3xb"/>
+            </g>
+            <g opacity=".5">
+                <g filter="url(#jk3xc)">
+                    <use fill="none" stroke-opacity=".5" stroke-width="0" mask="url(&quot;#jk3xd&quot;)" xlink:href="#jk3xa"/>
+                    <use fill-opacity=".5" xlink:href="#jk3xa"/>
+                </g>
+                <use fill="#fff" xlink:href="#jk3xa"/>
+            </g>
+        </g>
+    </g>
+</svg>

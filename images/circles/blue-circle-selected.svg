@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <circle id="cir" cx="15" cy="15" r="12"/>
+    </defs>
+    <g>
+        <circle cx="15" cy="15" r="15" fill="#4a90e2"/>
+        <use fill-opacity="0" stroke="#919191" stroke-miterlimit="50"
+             stroke-opacity=".5" stroke-width="2" fill="#fff" xlink:href="#cir"/>
+    </g>
+</svg>

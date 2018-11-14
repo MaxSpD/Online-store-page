@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="50" height="18" viewBox="0 0 50 18">
+    <defs>
+        <path id="2xraa" d="M939.9 418H981a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-41.1z"/>
+        <path id="2xrab" d="M977 422.5a.5.5 0 0 1 1 0v9a.5.5 0 0 1-1 0z"/>
+    </defs>
+        <g>
+            <g transform="translate(-933 -418)">
+                <g>
+                    <use fill="#f33011" xlink:href="#2xraa"/>
+                </g>
+                <g>
+                    <use fill="#ffa293" xlink:href="#2xrab"/>
+                </g>
+            </g>
+            <polygon transform="translate(0 -2)" fill="#f33011" points="0,11 7,2 7,20"/>
+        </g>
+</svg>
